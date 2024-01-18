@@ -3,6 +3,7 @@ case "`uname`" in
 OS400*) os400=true;;
 esac
 
+PRG="$0"
 
 while [ -h "$PRG" ] ; do
   ls=`ls -ld "$PRG"`
