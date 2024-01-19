@@ -65,7 +65,9 @@ if $cygwin; then
   CATALINA_HOME=`cygpath --absolute --windows "$CATALINA_HOME"`
   CLASSPATH=`cygpath --path --windows "$CLASSPATH"`
 fi
-
+if $CATALINA_HOME; then
+    "$CATALINA_HOME"/bin/setclasspath.sh
+fi
 JAVA_OPTS="$JAVA_OPTS -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
 //at cmd
 eval exec "\"$_RUNJAVA\"" "$JAVA_OPTS" "$TOOL_OPTS" \
