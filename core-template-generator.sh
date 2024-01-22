@@ -99,3 +99,4 @@ export CATALINA_HOME=${CATALINA_HOME}
 ### web app instance base dir
 export CATALINA_BASE=${APP_CATALINA_BASE}
 EOT
+
